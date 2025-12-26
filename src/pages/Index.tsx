@@ -238,24 +238,24 @@ const Index = () => {
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <Icon name="Mail" className="mx-auto mb-4 text-primary" size={40} />
               <h3 className="font-bold text-lg mb-2">Email</h3>
-              <a href="mailto:your.email@example.com" className="text-primary hover:underline">
-                your.email@example.com
+              <a href="mailto:taraipoko@gmail.com" className="text-primary hover:underline">
+                taraipoko@gmail.com
               </a>
             </Card>
             
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <Icon name="Phone" className="mx-auto mb-4 text-primary" size={40} />
               <h3 className="font-bold text-lg mb-2">Телефон</h3>
-              <a href="tel:+79001234567" className="text-primary hover:underline">
-                +7 (900) 123-45-67
+              <a href="tel:+79966570933" className="text-primary hover:underline">
+                +7 (996) 657-09-33
               </a>
             </Card>
             
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <Icon name="MessageCircle" className="mx-auto mb-4 text-primary" size={40} />
               <h3 className="font-bold text-lg mb-2">Telegram</h3>
-              <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                @yourusername
+              <a href="https://t.me/lowakasaturno" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                @lowakasaturno
               </a>
             </Card>
           </div>
