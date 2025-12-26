@@ -50,8 +50,15 @@ const Index = () => {
 
       <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-6">
         <div className="container mx-auto text-center animate-fade-in">
+          <div className="mb-8">
+            <img
+              src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/be3bc382-ac23-4699-89b9-536574a919c0.jpg"
+              alt="Николашкин Артём"
+              className="w-48 h-48 rounded-full object-cover mx-auto border-4 border-primary shadow-lg"
+            />
+          </div>
           <h2 className="text-6xl font-bold font-heading mb-6 text-secondary">
-            Профессиональное портфолио
+            Николашкин Артём
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Добро пожаловать! Здесь вы найдете информацию о моем опыте, навыках и достижениях в профессиональной сфере.
@@ -76,17 +83,22 @@ const Index = () => {
               <div className="mb-4 text-primary">
                 <Icon name="Briefcase" size={40} />
               </div>
-              <h3 className="text-2xl font-bold font-heading mb-4">Опыт работы</h3>
+              <h3 className="text-2xl font-bold font-heading mb-4">Опыт и деятельность</h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-lg">Старший специалист</h4>
-                  <p className="text-muted-foreground">Компания ABC • 2020-2024</p>
-                  <p className="mt-2">Руководил командой из 5 специалистов, внедрил новые процессы, повысившие эффективность на 40%</p>
+                  <h4 className="font-semibold text-lg">Профорг группы М561</h4>
+                  <p className="text-muted-foreground">Активная студенческая позиция</p>
+                  <p className="mt-2">Представляю интересы студентов группы, координирую взаимодействие с администрацией учебного заведения</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">Специалист</h4>
-                  <p className="text-muted-foreground">Компания XYZ • 2018-2020</p>
-                  <p className="mt-2">Участвовал в реализации ключевых проектов, работал с международными клиентами</p>
+                  <h4 className="font-semibold text-lg">Член профкома</h4>
+                  <p className="text-muted-foreground">Профсоюзная деятельность</p>
+                  <p className="mt-2">Участвую в работе профсоюзного комитета, защищаю права студентов</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg">Разработчик</h4>
+                  <p className="text-muted-foreground">IT-сфера</p>
+                  <p className="mt-2">Занимаюсь разработкой веб-приложений и программных решений</p>
                 </div>
               </div>
             </Card>
@@ -144,19 +156,19 @@ const Index = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <Icon name="CheckCircle" className="mr-2 mt-1 text-primary flex-shrink-0" size={20} />
-                  <span>Успешно реализовал 15+ крупных проектов с бюджетом более 10 млн руб.</span>
+                  <span>Организовал более 10 студенческих мероприятий для группы и факультета</span>
                 </li>
                 <li className="flex items-start">
                   <Icon name="CheckCircle" className="mr-2 mt-1 text-primary flex-shrink-0" size={20} />
-                  <span>Получил награду "Лучший сотрудник года" в 2022 и 2023</span>
+                  <span>Успешно реализовал несколько IT-проектов в области веб-разработки</span>
                 </li>
                 <li className="flex items-start">
                   <Icon name="CheckCircle" className="mr-2 mt-1 text-primary flex-shrink-0" size={20} />
-                  <span>Сертификаты по управлению проектами (PMP, Agile)</span>
+                  <span>Активное участие в общественной жизни учебного заведения</span>
                 </li>
                 <li className="flex items-start">
                   <Icon name="CheckCircle" className="mr-2 mt-1 text-primary flex-shrink-0" size={20} />
-                  <span>Выступал спикером на 3 международных конференциях</span>
+                  <span>Координация работы профсоюзной организации студентов</span>
                 </li>
               </ul>
             </Card>
