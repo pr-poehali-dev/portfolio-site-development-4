@@ -36,6 +36,14 @@ const Index = () => {
                 О себе
               </button>
               <button
+                onClick={() => scrollToSection('achievements')}
+                className={`transition-colors hover:text-primary ${
+                  activeSection === 'achievements' ? 'text-primary' : 'text-muted-foreground'
+                }`}
+              >
+                Достижения
+              </button>
+              <button
                 onClick={() => scrollToSection('contacts')}
                 className={`transition-colors hover:text-primary ${
                   activeSection === 'contacts' ? 'text-primary' : 'text-muted-foreground'
@@ -52,7 +60,7 @@ const Index = () => {
         <div className="container mx-auto text-center animate-fade-in">
           <div className="mb-8">
             <img
-              src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/be3bc382-ac23-4699-89b9-536574a919c0.jpg"
+              src="https://cdn.poehali.dev/files/photo_2025-12-26_20-02-33.jpg"
               alt="Николашкин Артём"
               className="w-48 h-48 rounded-full object-cover mx-auto border-4 border-primary shadow-lg"
             />
@@ -83,100 +91,152 @@ const Index = () => {
               <div className="mb-4 text-primary">
                 <Icon name="Briefcase" size={40} />
               </div>
-              <h3 className="text-2xl font-bold font-heading mb-4">Опыт и деятельность</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-lg">Профорг группы М561</h4>
-                  <p className="text-muted-foreground">Активная студенческая позиция</p>
-                  <p className="mt-2">Представляю интересы студентов группы, координирую взаимодействие с администрацией учебного заведения</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-lg">Член профкома</h4>
-                  <p className="text-muted-foreground">Профсоюзная деятельность</p>
-                  <p className="mt-2">Участвую в работе профсоюзного комитета, защищаю права студентов</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-lg">Разработчик</h4>
-                  <p className="text-muted-foreground">IT-сфера</p>
-                  <p className="mt-2">Занимаюсь разработкой веб-приложений и программных решений</p>
-                </div>
-              </div>
+              <h3 className="text-2xl font-bold font-heading mb-4">Профорг группы М561</h3>
+              <p className="text-muted-foreground mb-4">Активная студенческая позиция</p>
+              <p>Представляю интересы студентов группы, координирую взаимодействие с администрацией учебного заведения</p>
             </Card>
 
             <Card className="p-8 hover:shadow-lg transition-shadow animate-slide-up" style={{ animationDelay: '0.1s' }}>
               <div className="mb-4 text-primary">
-                <Icon name="Award" size={40} />
+                <Icon name="Users" size={40} />
               </div>
-              <h3 className="text-2xl font-bold font-heading mb-4">Навыки</h3>
-              <div className="space-y-3">
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-semibold">Управление проектами</span>
-                    <span className="text-muted-foreground">95%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: '95%' }}></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-semibold">Аналитика данных</span>
-                    <span className="text-muted-foreground">90%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: '90%' }}></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-semibold">Коммуникация</span>
-                    <span className="text-muted-foreground">88%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: '88%' }}></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-semibold">Стратегическое планирование</span>
-                    <span className="text-muted-foreground">92%</span>
-                  </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: '92%' }}></div>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-2xl font-bold font-heading mb-4">Член профкома</h3>
+              <p className="text-muted-foreground mb-4">Профсоюзная деятельность</p>
+              <p>Участвую в работе профсоюзного комитета, защищаю права студентов</p>
             </Card>
 
             <Card className="p-8 hover:shadow-lg transition-shadow animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <div className="mb-4 text-primary">
-                <Icon name="Trophy" size={40} />
+                <Icon name="Code" size={40} />
               </div>
-              <h3 className="text-2xl font-bold font-heading mb-4">Достижения</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <Icon name="CheckCircle" className="mr-2 mt-1 text-primary flex-shrink-0" size={20} />
-                  <span>Организовал более 10 студенческих мероприятий для группы и факультета</span>
-                </li>
-                <li className="flex items-start">
-                  <Icon name="CheckCircle" className="mr-2 mt-1 text-primary flex-shrink-0" size={20} />
-                  <span>Успешно реализовал несколько IT-проектов в области веб-разработки</span>
-                </li>
-                <li className="flex items-start">
-                  <Icon name="CheckCircle" className="mr-2 mt-1 text-primary flex-shrink-0" size={20} />
-                  <span>Активное участие в общественной жизни учебного заведения</span>
-                </li>
-                <li className="flex items-start">
-                  <Icon name="CheckCircle" className="mr-2 mt-1 text-primary flex-shrink-0" size={20} />
-                  <span>Координация работы профсоюзной организации студентов</span>
-                </li>
-              </ul>
+              <h3 className="text-2xl font-bold font-heading mb-4">Разработчик</h3>
+              <p className="text-muted-foreground mb-4">IT-сфера</p>
+              <p>Занимаюсь разработкой веб-приложений и программных решений</p>
+            </Card>
+
+            <Card className="p-8 hover:shadow-lg transition-shadow animate-slide-up md:col-span-3" style={{ animationDelay: '0.3s' }}>
+              <div className="mb-4 text-primary">
+                <Icon name="Calendar" size={40} />
+              </div>
+              <h3 className="text-2xl font-bold font-heading mb-4">Организатор мероприятий</h3>
+              <p className="text-muted-foreground mb-4">Активная общественная позиция</p>
+              <p>Организую и провожу различные студенческие, культурные и спортивные мероприятия для группы, факультета и учебного заведения</p>
             </Card>
           </div>
         </div>
       </section>
 
-      <section id="contacts" className="min-h-screen flex items-center justify-center py-20 px-6">
+      <section id="achievements" className="min-h-screen py-20 px-6">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold font-heading mb-12 text-center">Достижения</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow animate-slide-up">
+              <img
+                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/116ac5bf-8dac-45e9-ac70-6b8b1429bc31.jpg"
+                alt="Участник актива профбюро"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <Icon name="Users" className="mr-2 text-primary" size={24} />
+                  <h3 className="text-xl font-bold font-heading">Участник актива профбюро</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Активная работа в составе профсоюзного бюро, участие в принятии важных решений и защите прав студентов
+                </p>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow animate-slide-up" style={{ animationDelay: '0.1s' }}>
+              <img
+                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/ba8ebfb0-13b4-4ab6-8770-37354f759e56.jpg"
+                alt="Бывший кадет"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <Icon name="Shield" className="mr-2 text-primary" size={24} />
+                  <h3 className="text-xl font-bold font-heading">Бывший кадет</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Прошел обучение в кадетском корпусе, получил навыки дисциплины, ответственности и патриотизма
+                </p>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <img
+                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/e52dea2e-86a8-4111-9e93-cac0ab5764cc.jpg"
+                alt="Спортсмен"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <Icon name="Trophy" className="mr-2 text-primary" size={24} />
+                  <h3 className="text-xl font-bold font-heading">Спортсмен</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Активные занятия спортом, участие в соревнованиях и поддержание здорового образа жизни
+                </p>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow animate-slide-up" style={{ animationDelay: '0.3s' }}>
+              <img
+                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/f0d046ec-760a-4b24-bf95-b91cb1701408.jpg"
+                alt="Активист-волонтер"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <Icon name="Heart" className="mr-2 text-primary" size={24} />
+                  <h3 className="text-xl font-bold font-heading">Активист-волонтер</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Участие в волонтерских проектах, помощь нуждающимся и активная общественная позиция
+                </p>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow animate-slide-up" style={{ animationDelay: '0.4s' }}>
+              <img
+                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/003bb057-fb51-42da-94ae-a9de0149cbc9.jpg"
+                alt="Участник патриотических мероприятий"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <Icon name="Flag" className="mr-2 text-primary" size={24} />
+                  <h3 className="text-xl font-bold font-heading">Участник и организатор патриотических мероприятий</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Организация и участие в патриотических акциях, мероприятиях памяти и военно-патриотических событиях
+                </p>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow animate-slide-up" style={{ animationDelay: '0.5s' }}>
+              <img
+                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/7d23fbce-90b9-4876-b8d0-bb8c073d1f6d.jpg"
+                alt="Представитель проф-активистов"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <Icon name="Award" className="mr-2 text-primary" size={24} />
+                  <h3 className="text-xl font-bold font-heading">Представитель проф-активистов группы М561</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Являюсь официальным представителем профсоюзных активистов группы, координирую их деятельность
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" className="min-h-screen flex items-center justify-center py-20 px-6 bg-muted/30">
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="text-4xl font-bold font-heading mb-6">Контакты для связи</h2>
           <p className="text-xl text-muted-foreground mb-12">
@@ -221,7 +281,7 @@ const Index = () => {
 
       <footer className="bg-secondary text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <p>&copy; 2024 Профессиональное портфолио. Все права защищены.</p>
+          <p>&copy; 2024 Николашкин Артём. Все права защищены.</p>
         </div>
       </footer>
     </div>
