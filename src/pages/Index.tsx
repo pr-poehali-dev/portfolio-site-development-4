@@ -86,7 +86,7 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold font-heading mb-12 text-center">О себе</h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
             <Card className="p-8 hover:shadow-lg transition-shadow animate-slide-up">
               <div className="mb-4 text-primary">
                 <Icon name="Briefcase" size={40} />
@@ -105,16 +105,7 @@ const Index = () => {
               <p>Участвую в работе профсоюзного комитета, защищаю права студентов</p>
             </Card>
 
-            <Card className="p-8 hover:shadow-lg transition-shadow animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="mb-4 text-primary">
-                <Icon name="Code" size={40} />
-              </div>
-              <h3 className="text-2xl font-bold font-heading mb-4">Разработчик</h3>
-              <p className="text-muted-foreground mb-4">IT-сфера</p>
-              <p>Занимаюсь разработкой веб-приложений и программных решений</p>
-            </Card>
-
-            <Card className="p-8 hover:shadow-lg transition-shadow animate-slide-up md:col-span-3" style={{ animationDelay: '0.3s' }}>
+            <Card className="p-8 hover:shadow-lg transition-shadow animate-slide-up md:col-span-2" style={{ animationDelay: '0.2s' }}>
               <div className="mb-4 text-primary">
                 <Icon name="Calendar" size={40} />
               </div>
@@ -150,7 +141,7 @@ const Index = () => {
 
             <Card className="overflow-hidden hover:shadow-xl transition-shadow animate-slide-up" style={{ animationDelay: '0.1s' }}>
               <img
-                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/ba8ebfb0-13b4-4ab6-8770-37354f759e56.jpg"
+                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/5388d75c-50de-4882-8bb0-539deb9fe19f.jpg"
                 alt="Бывший кадет"
                 className="w-full h-48 object-cover"
               />
@@ -201,7 +192,7 @@ const Index = () => {
 
             <Card className="overflow-hidden hover:shadow-xl transition-shadow animate-slide-up" style={{ animationDelay: '0.4s' }}>
               <img
-                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/003bb057-fb51-42da-94ae-a9de0149cbc9.jpg"
+                src="https://cdn.poehali.dev/projects/2a2dd0a7-585a-4f8c-bc71-93e4152cd577/files/d47582da-20cf-4737-9c2b-1995f24dca3d.jpg"
                 alt="Участник патриотических мероприятий"
                 className="w-full h-48 object-cover"
               />
@@ -243,7 +234,7 @@ const Index = () => {
             Буду рад обсудить возможности сотрудничества или ответить на ваши вопросы
           </p>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <Icon name="Mail" className="mx-auto mb-4 text-primary" size={40} />
               <h3 className="font-bold text-lg mb-2">Email</h3>
@@ -257,14 +248,6 @@ const Index = () => {
               <h3 className="font-bold text-lg mb-2">Телефон</h3>
               <a href="tel:+79001234567" className="text-primary hover:underline">
                 +7 (900) 123-45-67
-              </a>
-            </Card>
-            
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <Icon name="Linkedin" className="mx-auto mb-4 text-primary" size={40} />
-              <h3 className="font-bold text-lg mb-2">LinkedIn</h3>
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                linkedin.com/in/yourprofile
               </a>
             </Card>
             
